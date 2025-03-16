@@ -1,6 +1,6 @@
 export const createNotificationSlice = (set) => ({
     notifications: [],
-    
+    //Nuevo slice de notificaciones para ejercicio complementario
     addNotification: (message, type = "success") => {
         const id = Date.now();
         set((state) => ({
