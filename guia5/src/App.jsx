@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import  { IndexPage } from './pagos/IndexPage'  
 import  { FavoritesPage } from './pagos/FavoritesPage'
 import Layout from './layout/Layout'
-
 const App = () => {
     return (
         <BrowserRouter>

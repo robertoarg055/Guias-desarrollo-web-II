@@ -3,11 +3,12 @@ import { useState } from 'react'
 import { useAppStore } from '../store/useAppStore'
 export default function SearchForm() {
     const searchRecipes = useAppStore((state) => state.searchRecipes)
+    const addNotification = useAppStore((state) => state.addNotification)
     const handleSubmit = (e) => {
         e.preventDefault()
         //TODO: validar
         if (Object.values(searchFilters).includes('')) {
-            console.log('Todos los campos son obligatorios')
+            addNotification('Todos los campos son obligatorios','error')
             return
         }
         searchRecipes(searchFilters)
