@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" 
+    rel="stylesheet" 
+    />
+  <title>Sitio Web del Portapapeles</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: '480px',
+          md: '768px',
+          lg: '976px',
+          xl: '1440px',
+        },
+        extend: {
+          colors: {
+            strongCyan: 'hsl(171, 66%, 44%)',
+            lightBlue: 'hsl(233, 100%, 69%)',
+            darkGrayishBlue: 'hsl(210, 10%, 33%)',
+            grayishBlue: 'hsl(201, 11%, 66%)',
+          },
+          fontFamily: {
+            sans: ['Bai Jamjuree', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-image: url('../images/bg-header-desktop.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: 576px) {
+      body {
+        background-image: url('../images/bg-header-mobile.png');
+      }
+    }
+
+    .ficon:hover {
+      filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg) 
+        brightness(101%) contrast(94%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Sección Hero -->
+  <section id="hero">
+    <div class="max-w-6xl mx-auto text-center px-10 mb-40 pt-16">
+      <img src="../images/logo.svg" alt="mx-auto my-16" />
+      <h3 class="mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl">Un historial de todo lo que copias</h3>
+      <p class="max-w-3xl mx-auto leading-9 text-center text-grayishBlue mb-10 text-2xl">
+        Clipboard te permite rastrear y organizar todo lo que copias.
+        Accede instantáneamente a tu portapapeles en todos tus dispositivos.
+      </p>
+      <!-- Contenedor de Botones -->
+      <div class="flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row
+                    md:space-y-0 md:space-x-4">
+        <a href="#" class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80">
+          Descargar para iOS
+        </a>
+        <a href="#" class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80">
+          Descargar para Mac
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Snippets -->
+  <section id="snippets">
+    <div class="max-w-6x1 mx-auto text-center px-10 my-20">
+      <h3 class="mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5x1">Haz un seguimiento de tus fragmentos</h3>
+      <p class="max-w-3x1 mx-auto leading-9 text-center text-grayishBlue mb-24 text-x1">
+        Clipboard guarda instantáneamente cualquier elemento que copies en la
+        nube, lo que significa que puedes acceder a tus fragmentos inmediatamente
+        en todos tus dispositivos. Nuestras aplicaciones para Mac y iOS te ayudarán
+        a organizar todo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Características -->
+  <section id="features">
+    <div class="max-w-6xl mx-auto text-center px-10 my-20">
+      <div class="relative flex flex-col md:flex-row md:space-x-32">
+        <!-- Imagen -->
+        <div class="md:w-1/2">
+          <img 
+            src="../images/image-computer.png" 
+            alt="" 
+            class="md:absolute top-0 right-[50%]"
+          />
+        </div>
+        <!-- Contenedor de Elementos -->
+        <div 
+          class="flex flex-col mt-16 mb-24 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16"
+        >
+          <!-- Elemento 1 -->
+          <div>
+            <h5 class="mb-2 text-2xl font-bold text-darkGrayishBlue">Búsqueda Rápida</h5>
+            <p class="max-w-md text-grayishBlue">
+              Busca fácilmente tus fragmentos por contenido, categoria, dirección web,
+              aplicación y más.
+            </p>
+          </div>
+          <!-- Elemento 2 -->
+          <div>
+            <h5 class="mb-2 text-2xl font-bold text-darkGrayishBlue">Sincronización con iCloud</h5>
+            <p class="max-w-md text-grayishBlue">
+              Guarda y sincroniza instantáneamente los fragmentos en todos tus dispositivos.
+            </p>
+          </div>
+          <!-- Elemento 3 -->
+          <div>
+            <h5 class="mb-2 text-2x1 font-bold text-darkGrayishBlue">Historial Completo</h5>
+            <p class="max-w-md text-grayishBlue">
+              Recupera cualquier fragmento desde el primer momento que comenzaste a usar
+              la aplicación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Acceso en Cualquier Lugar -->
+  <section id="access">
+    <div class="max-w-6x1 mx-auto text-center px-10 my-20">
+      <h3 class="mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5x1">Accede a Clipboard en Cualquier Lugar</h3>
+      <p class="max-w-3x1 mx-auto leading-9 text-center text-grayishBlue mb-24 text-x1">
+        Ya sea que estés en movimiento o en tu computadora, puedes acceder a todos tus
+        fragmentos de Clipboard con unos simples clics.
+      </p>
+      <img src="../images/image-devices.png" alt="" class="mx-auto" />
+    </div>
+  </section>
+
+  <!-- Sección Potencia tu Flujo de Trabajo -->
+  <section id="supercharge">
+    <div class="max-w-6x1 mx-auto text-center px-10 my-20">
+      <h3 class="mb-8 text-4x1 font-bold text-darkGrayishBlue md:text-5x1">Potencia tu flujo de trabajo</h3>
+      <p class="max-w-3x1 mx-auto leading-9 text-center text-grayishBlue mb-16 text-xl">
+        Tenemos las herramientas para aumentar tu productividad.
+      </p>
+      <!-- Contenedor de Elementos -->
+      <div
+        class="flex flex-col items-center justify-between space-y-16 md: flex-row md: space-y-0 md: space-x-12" 
+      >
+        <!-- Elemento 1 -->
+        <div class="flex flex-col items-center space-y-5">
+          <img src="../images/icon-blacklist.svg" alt="" class="mb-6" />
+          <h5 class="mb-2 text-2x1 font-bold text-darkGrayishBlue">Crear Listas Negras</h5>
+          <p class="max-w-md text-grayishBlue">
+            Busca fácilmente tus fragmentos por contenido, categoría, dirección web,
+            aplicación y más.
+          </p>
+        </div>
+        <!-- Elemento 2 -->
+        <div class="flex flex-col items-center space-y-5">
+          <img src="../images/icon-text.svg" alt="" class="mb-6" />
+          <h5 class="mb-2 text-2x1 font-bold text-darkGrayishBlue">Fragmentos de Texto Plano</h5>
+          <p class="max-w-md text-grayishBlue">
+            Elimina el formato no deseado del texto copiado para una apariencia consistente.
+          </p>
+        </div>
+        <!-- Elemento 3 -->
+        <div class="flex flex-col items-center space-y-5">
+          <img src="../images/icon-preview.svg" alt="" class="mb-6" />
+          <h5 class="mb-2 text-2x1 font-bold text-darkGrayishBlue">Vista Previa</h5>
+          <p class="max-w-md text-grayishBlue">
+            Vista previa rápida de todos los fragmentos en tu Clipboard para un acceso fácil.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Referencias -->
+  <section id="references">
+    <div 
+      class="flex flex-col items-center justify-between max-w-6x1 px-10 mx-auto space-y-16 my-44
+          md:flex-row md: space-y-0"
+    >
+      <img src="../images/logo-google.png" alt="" />
+      <img src="../images/logo-ibm.png" alt="" />
+      <img src="../images/logo-microsoft.png" alt="" />
+      <img src="../images/logo-hp.png" alt="" />
+      <img src="../images/logo-vector-graphics.png" alt="" />
+    </div>
+  </section>
+
+  <!-- Sección CTA Inferior -->
+  <section id="bottom">
+    <div class="max-w-6x1 mx-auto text-center px-10 my-20">
+      <h3 class="mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5x1">Clipboard para 105 y MacOS</h3>
+      <p class="max-w-3x1 mx-auto leading-9 text-center text-grayishBlue mb-10 text-x1">
+        Disponible de forma gratuita en la App Store. Descárgalo para Mac o 105, sincronizalo
+        con iCloud y estarás listo para comenzar a agregar a tu portapapeles.
+      </p>
+      <!-- Contenedor de Botones -->
+      <div class="flex flex-col justify-center w-full space-y-6 text-x1 text-white md: flex-row nd: space-y-0
+  md: space-x-4">
+        <a href="#" class="p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80">
+          Descargar para 105
+        </a>
+        <a href="#" class="p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80">
+          Descargar para Mac
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center px-10">
+      <div class="flex flex-col items-center justify-between md:flex-row">
+        <!-- Imagen-->
+        <img src="../images/logo.svg" alt="" class="scale-50" />
+        <!-- Contenedor de Menús y Redes Sociales -->
+        <div
+          class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 
+                  md:flex-row md:mb-0 md:space-y-0 text-grayishBlue"
+        >
+          <!-- Menús -->
+          <div 
+            class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0"
+          >
+            <!-- Menú 1 -->
+            <div class="flex flex-col space-y-4 text-center md:text-left">
+            <div><a href="#" class="hover:text-strongCyan">FAQs</a></div>
+            <div>
+                <a href="#" class="hover:text-strongCyan">Contáctanos</a>
+              </div>
+            </div>
+            <!-- Menú 2 -->
+            <div class="flex flex-col space-y-4 text-center md:text-left">
+              <div>
+                <a href="#" class="hover:text-strongCyan">Política de Privacidad</a>
+              </div>
+              <div>
+                <a href="#" class="hover:text-strongCyan">Kit de Prensa</a>
+              </div>
+            </div>
+            <!-- Menú 3 -->
+            <div class="flex flex-col space-y-4 text-center md:text-left">
+              <div>
+                <a href="#" class="hover:text-strongCyan">Guía de Instalación</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Iconos Sociales -->
+          <div class="flex justify-between w-32 py-1">
+            <a href="#"
+              ><img
+                src="../images/icon-facebook.svg" 
+                alt="" 
+                class="duration-200 ficon" 
+            /></a>
+            <a href="#"
+              ><img 
+                src="../images/icon-twitter.svg" 
+                alt="" 
+                class="duration-200 ficon" 
+            /></a>
+            <a href="#">
+              <img 
+              src="../images/icon-instagram.svg" 
+              alt="" 
+              class="duration-200 ficon" 
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
